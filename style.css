@@ -1,0 +1,149 @@
+    /* loads the font file */
+    
+    @font-face {
+        font-family: "JetBrainsMonoBold";
+        src: url("JetBrainsMono-Bold.otf") format("opentype");
+    }
+    
+    @font-face {
+        font-family: "JetBrainsMonoLight";
+        src: url("JetBrainsMono-Light.otf") format("opentype");
+    }
+    
+    @font-face {
+        font-family: "JetBrainsMonoRegular";
+        src: url("JetBrainsMono-Regular.otf") format("opentype");
+    }
+    
+    @font-face {
+        font-family: "JetBrainsMonoMedium";
+        src: url("JetBrainsMono-Medium.otf") format("opentype");
+    }
+    
+    body {
+        background-color: #fbf8f4;
+        margin: 30px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .navbar {
+        font-family: 'JetBrainsMonoLight';
+        /* font-style: "regular"; */
+        font-size: 30px;
+        color: #162802;
+        border-bottom: #162802 solid 2.2px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: hotpink;
+    }
+    /* selected link */
+    /* a:active {
+    color: blue;
+  } */
+    
+    .hypercube {
+        margin: 0 auto;
+        width: 50%;
+        z-index: -1;
+    }
+    
+    #defaultCanvas0 {
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    .article-item-img-1 {
+        width: 150px;
+    }
+    
+    span#article-title {
+        color: blueviolet;
+    }
+    
+    .row {
+        display: -ms-flexbox;
+        /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE 10 */
+        flex-wrap: wrap;
+        /* padding: 0 4px; */
+    }
+    /* Create two equal columns that sits next to each other */
+    
+    .column {
+        -ms-flex: 25%;
+        /* IE 10 */
+        flex: 25%;
+        padding: 10px;
+    }
+    
+    .column img {
+        /* object-fit: contain; */
+        /* height: 50%; */
+        margin-top: 50px;
+        vertical-align: middle;
+        border: solid 2px black;
+    }
+    
+    .column img:hover {
+        cursor: pointer;
+    }
+    
+    p {
+        font-family: 'lato';
+        font-weight: 400;
+        font-size: 20px;
+        /* line-height: 28px; */
+        color: #162802;
+        /* padding-right: 500px; */
+        max-width: 50%;
+    }
+    
+    h3 {
+        font-family: 'JetBrainsMonoLight';
+        /* font-style: "regular"; */
+        font-size: 30px;
+        color: #162802;
+        border-bottom: #162802 solid 2.2px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: right;
+    }
+    
+    .linkedIn {
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        filter: brightness(0%);
+        max-width: 2%;
+    }
+    
+    figcaption {
+        padding-top: 15px;
+        font-family: 'JetBrainsMonoLight';
+        color: #162802;
+    }

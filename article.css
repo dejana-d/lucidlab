@@ -1,0 +1,192 @@
+/* loads the font file */
+
+@font-face {
+    font-family: "JetBrainsMonoBold";
+    src: url("JetBrainsMono-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "JetBrainsMonoLight";
+    src: url("JetBrainsMono-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "JetBrainsMonoRegular";
+    src: url("JetBrainsMono-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "JetBrainsMonoMedium";
+    src: url("JetBrainsMono-Medium.otf") format("opentype");
+}
+
+body {
+    background-color: #fbf8f4;
+    margin: 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fffffa;
+    background: #f4d1f9;
+}
+
+ ::selection {
+    color: #fffffa;
+    background: #f4d1f9;
+}
+
+.navbar {
+    font-family: 'JetBrainsMonoLight';
+    /* font-style: "regular"; */
+    font-size: 30px;
+    color: #162802;
+    border-bottom: #162802 solid 2.2px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fffffa;
+}
+
+
+/* selected link */
+
+
+/* a:active {
+    color: blue;
+  } */
+
+.hypercube {
+    margin: 0 auto;
+    width: 50%;
+    z-index: -1;
+}
+
+#defaultCanvas0 {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.article-item-img-1 {
+    width: 150px;
+}
+
+span#article-title {
+    color: blueviolet;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* Create two equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%;
+    /* IE 10 */
+    flex: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 50px;
+    vertical-align: middle;
+    border: solid 2px black;
+}
+
+.column img:hover {
+    cursor: pointer;
+}
+
+.articleContent {
+    margin: 100px 250px 100px;
+    text-align: center;
+    border: solid #212529 2px;
+    padding: 50px 150px;
+    background-color: #fffffa;
+    padding-bottom: 200px;
+}
+
+
+/* article title */
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+}
+
+
+/* essay author, date, word count */
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #162802;
+    /* padding-right: 500px; */
+    /* max-width: 50%; */
+}
+
+
+/* article content */
+
+p {
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #212529;
+}
+
+
+/* make image modal later */
+
+img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+figcaption {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #4a4a4a;
+}
